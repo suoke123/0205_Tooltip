@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 30px;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function( ) {
+
+            $("#btn").click(function(){
+                $("h1").css( {
+                    "color": "#f00",
+                    "text-decoration": "underline",
+                    "border": "1px solid #08f"
+                })
+
+                $("h1").text("OK!");
+            });
+
+        });
+    </script>
+    <!-- 내부 JS 적용 = Inner JS 적용, 이너 JS -->
+
+</head>
+<body>
+    <h1 id="sample">제이쿼리 시작!</h1>
+    <button id="btn">확인</button>
+</body>
+</html>
